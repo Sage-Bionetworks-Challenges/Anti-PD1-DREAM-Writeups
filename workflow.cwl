@@ -28,7 +28,7 @@ inputs:
     type: File
   - id: admin
     type: string
-    default: "antipd1dreamservice"
+    default: "3386496"
 
 # there are no output at the workflow engine level.  Everything is uploaded to Synapse
 outputs: []
