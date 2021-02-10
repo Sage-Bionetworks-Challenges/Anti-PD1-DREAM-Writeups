@@ -28,7 +28,7 @@ inputs:
     type: File
   - id: admin
     type: string
-    default: "jane.doe"  # TODO: enter admin username (they will become the archive owner)
+    default: "antipd1dreamservice"
 
 # there are no output at the workflow engine level.  Everything is uploaded to Synapse
 outputs: []
@@ -42,12 +42,12 @@ steps:
       - id: submissionid
         source: "#submissionId"
       - id: challengewiki
-        valueFrom: "syn123"  # TODO: update to the Challenge's synID
+        valueFrom: "syn18404605"
     # UNCOMMENT THE FOLLOWING IF NEEDED
     #   - id: public
     #     default: true
-    #   - id: admin
-    #     source: "#admin"
+      - id: admin
+        source: "#admin"
     out:
       - id: results
       - id: status
