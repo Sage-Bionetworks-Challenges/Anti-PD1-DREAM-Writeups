@@ -28,7 +28,7 @@ inputs:
     type: File
   - id: admin
     type: string
-    default: "3386496"
+    default: "Anti-PD1 Response DREAM Challenge Organizers"
 
 # there are no output at the workflow engine level.  Everything is uploaded to Synapse
 outputs: []
@@ -44,8 +44,8 @@ steps:
       - id: challengewiki
         valueFrom: "syn18404605"
     # UNCOMMENT THE FOLLOWING IF NEEDED
-    #   - id: public
-    #     default: true
+      - id: public
+        default: true
       - id: admin
         source: "#admin"
     out:
@@ -65,8 +65,8 @@ steps:
       - id: invalid_reasons
         source: "#validate/invalid_reasons"
       # UNCOMMENT IF EMAIL SHOULD ONLY BE SENT FOR ERRORS
-      # - id: errors_only
-      #   default: true
+      - id: errors_only
+        default: true
     out: [finished]
 
   annotate_validation_with_output:
